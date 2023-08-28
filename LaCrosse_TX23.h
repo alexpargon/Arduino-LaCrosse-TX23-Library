@@ -38,8 +38,9 @@ class LaCrosse_TX23
 		// reads sensor data, returns true if successfull
     // wind speed in m/s
     // wind direction in degrees 0-359
-    bool read(const float &speed, const uint16_t &direction);
-    
+    bool read(float &speed, uint16_t &direction);
+
+    bool read(float *speed, uint16_t *direction);
     // reads raw sensor data, returns true if successfull
     // wind speed in 0.1 m/s
     // wind direction 0-15
