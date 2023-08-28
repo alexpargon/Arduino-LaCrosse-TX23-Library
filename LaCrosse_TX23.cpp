@@ -93,7 +93,7 @@ bool LaCrosse_TX23::readRaw(uint16_t &speed, uint8_t &direction)
 	return true;
 }
 
-bool LaCrosse_TX23::read(float &speed, uint16_t &direction)
+bool LaCrosse_TX23::read(const float &speed, const uint16_t &direction)
 {
 	uint16_t s;
 	uint8_t d;
